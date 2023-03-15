@@ -1,9 +1,11 @@
 ﻿using System;
+using biggschool.Migrations;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using biggschool.Models;
+
 
 namespace biggschool.ViewModels
 {
@@ -12,10 +14,10 @@ namespace biggschool.ViewModels
         [Required]
         public string Place { get; set; }
         [Required]
-        
+        [FutureDate]
         public string Date { get; set; }
         [Required]
-        
+        [ValidTime]
         public string Time { get; set; }
         [Required]
         public byte Category { get; set; }
@@ -23,7 +25,7 @@ namespace biggschool.ViewModels
 
         public DateTime GetDateTime()
         {
-            return DateTime.Parse(string.Format("{0} {1}", Date, Time));
+           return DateTime.Parse(string.Format("{0} {1}", Date, Time));
         }
 
     }
