@@ -10,13 +10,13 @@ namespace biggschool.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-       
 
         public DbSet<Course> Courses { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Attendance> Attendances { get; set; }  
 
         public ApplicationDbContext()
-            : base("biggschoolConnection", throwIfV1Schema: false)
+            : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
 

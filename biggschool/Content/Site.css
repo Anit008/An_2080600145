@@ -39,6 +39,7 @@ textarea {
  background-color: #777;
  border-color: #fff
 }
+/*COURSE LAYOUT*/
 .course {
     list-style: none;
 }
@@ -49,7 +50,6 @@ textarea {
     }
   
     .course > li .date
-
 {
     text-align: center;
     background-color: #d41d50;

@@ -20,7 +20,7 @@ namespace biggschool.Models
 
         public string Place { get; set; }
 
-        public DateTime DateTime { get; set; }
+        public DateTime  DateTime { get; set; }
 
         public Category Category { get; set; }
         [Required]
