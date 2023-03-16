@@ -11,7 +11,9 @@ using System.Data.Entity.Infrastructure;
 
 
 namespace biggschool.Controllers
+
 {
+    [Authorize]
     public class AttendancesController : ApiController
     {
         private ApplicationDbContext _dbContext;
